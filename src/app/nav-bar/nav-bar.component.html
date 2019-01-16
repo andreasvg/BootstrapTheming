@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <button
+    class="navbar-toggler d-lg-none"
+    type="button"
+    (click)="isCollapsed = !isCollapsed"
+    [attr.aria-expanded]="!isCollapsed"
+    aria-controls="navbarsExampleDefault"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar" [collapse]="isCollapsed">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#"
+          >Home <span class="sr-only">(current)</span>
+        </a>
+      </li>
+
+      <li class="nav-item dropdown" dropdown>
+        <a
+          dropdownToggle
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdownGuitarMenuLink"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          >Guitar</a
+        >
+        <div
+          *dropdownMenu
+          class="dropdown-menu"
+          aria-labelledby="navbarDropdownGuitarMenuLink"
+        >
+          <a class="dropdown-item" href="#">Electric Solidbody</a>
+          <a class="dropdown-item" href="#">Electric Hollowbody</a>
+          <a class="dropdown-item" href="#">Acoustic</a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</nav>
