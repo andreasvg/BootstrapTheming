@@ -15,9 +15,11 @@ Example of how to easily theme Bootstrap using some SASS variables, and use the 
 ### Required modules for the navbar to work:
 
 - BrowserModule
-- FormsModule
 - CollapseModule
 - BsDropdownModule
+
+### Required modules for the PrimeNg date picker to work:
+- FormsModule
 - CalendarModule (from PrimeNg)
 
 ## Issues
