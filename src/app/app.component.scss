@@ -1,3 +1,33 @@
-.layout-maincontainer {
-  margin: 20px 10px 20px 10px;
+
+@import "../variables";
+
+.container {
+  margin-top: 20px;
 }
+
+.myDiv {
+  height: 150px;
+  width: 150px;
+}
+
+.myDetailsForm {
+  width: 400px;
+  padding: 10px;
+  border-radius: 8px;
+  border-width: 1px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: $avg-primary;
+  background-color: $avg-primary-light;
+
+  .btn {
+    margin-right: 5px;
+  }
+}
+
+.form-control {
+  border-width: 1px;
+  border-style: solid;
+  border-color: $avg-primary;
+}
+

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'BootstrapThemeTest';
+
+  public dob: Date;
+  public firstName: string;
+  public lastName: string;
 }

@@ -11,3 +11,23 @@ $theme-colors: (
 );
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.ui-calendar {
+  width: 100%;
+}
+
+.avg-form-datepicker .ui-inputtext {
+  border-radius: .25rem;
+  width: calc(100% - 35px);
+  border-width: 1px;
+  border-style: solid;
+  border-color: $avg-primary;
+}
+
+.ui-datepicker-trigger, .ui-calendar-button {
+  background-color: $avg-primary !important;
+  border-color: $avg-primary !important;
+  border-width: 2px !important;
+  border-top-right-radius: .25rem !important;
+  border-bottom-right-radius: .25rem !important;
+}
